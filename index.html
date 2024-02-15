@@ -1,14 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--VERSION 1-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url('Images/wallpaper.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(51, 51, 51, 0.7); /* Semi-transparent black */
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+       
+        .header-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Align items vertically */
+            width: 100%; /* Take full width of the header */
+        }
+
+
+        
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px; 
+        }
+
+        nav {
+            display: flex;
+            justify-content: center; /* Center the navigation links horizontally */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fff; /* Set text color */
+            text-decoration: none; /* Remove underline */
+            padding: 10px 20px; /*  padding */
+            border-radius: 5px; /* border radius */
+            background-color: #cb9848; /* Set background color */
+            transition: background-color 0.3s; /* transition for smooth hover effect */
+        }
+
+
+        
+        nav ul li a:hover {
+            background-color: #45a049; /* Darken the background color */
+        }
+
+        section {
+            width: 80%;
+            margin: 20px 0;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 20px;
+            border-radius: 10px; /* border radius for better appearance */
+        }
+
+        section#about,
+        section#skills {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            align-items: center;
+        }
+
+        section#projects {
+            width: 80%;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        section#projects h2 {
+            margin-bottom: 20px;
+        }
+
+        section#projects ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        section#projects ul li {
+            margin-right: 20px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.7); 
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        section#featured-image {
+            border: 2px solid black;
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(173, 216, 230, 0.5);
+        }
+
+    </style>
 </head>
 <body>
     <header>
-        <img src="logo url" alt="Logo">
+    <div class="header-container">
+        <img src="Images/logo.png" alt="Logo" style="border-radius: 50%; width: 100px; height: 100px;">
+
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -17,37 +151,70 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
+</header>
+
+
+    <!-- Marquee of corgi.gif -->
+    <section id="featured-image">
+        <marquee behavior="scroll" direction="right">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+            <img src="Images/corgi.gif" alt="Corgi" style="width: 200px;">
+        </marquee>
+    </section>
 
     <section id="about">
-        <h2>Autobiography</h2>
-        <p>[autobiography]</p>
-    </section>
+    <h2>Autobiography</h2>
+    <p>
+        Hello there! My name is Jon ALem San Gregorio, and I'm a 2nd year student pursuing a Bachelor of Science degree in Computer Science. 
+        Ever since I was introduced to the world of programming, I've been passionate about creating user-friendly and visually appealing 
+        interfaces. My journey into the field of software development has been a fascinating one, marked by various experiences that have 
+        shaped me into the professional I am today.
+    </p>
+    <p>
+        Throughout my academic journey, I've acquired a solid foundation in computer science fundamentals, including data structures, 
+        algorithms, and software engineering principles. I've also delved deep into frontend technologies, mastering languages such as 
+        HTML, CSS, and JavaScript. My coursework and personal projects have provided me with hands-on experience in designing and 
+        developing responsive and interactive web applications.
+    </p>
+</section>
+
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Proficieny in Python</li>
+            <li>Proficiency in R</li>
+            <li>Proficiency in C</li>
+            <li>Proficiency in Java</li>
+
         </ul>
     </section>
 
     <section id="projects">
-        <h2>Previous Projects</h2>
-        <ul>
-            
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </section>
+    <h2>Previous Projects</h2>
+    <ul>
+        <li>
+            <p>Zombie Shooter (CMSC 22)</p>
+            <img src="Images/ZombieShooter.jpg" alt="Project 1" width="220" height="220">
+        </li>
+        <li>
+            <p>Farm Simulator (CMSC 12)</p>
+            <img src="Images/FarmSimulator.png" alt="Project 2" width="220" height="220">
+        </li>
+        <li>
+            <p>Simplex Calculator(CMSC 150)</p>
+            <img src="Images/SimplexCalculator.png" alt="Project 3" width="220" height="220">
+        </li>
+    </ul>
+</section>
+
 
     <footer id="contact">
         <p>Address/Contact Information</p>
-        
-        <p><a href="#top">Back to top</a></p>
-    </footer>
-</body>
-</html>
+        <p><a href="#top">
