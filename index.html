@@ -1,14 +1,25 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
-    <title>Sample Web Page</title>
-  </head>
-
-  <body>
-    <h1>This is a heading</h1>
-    <p>This is the first paragraph of text</p>
-    <hr />
-    <p>This is the second paragraph of text</p>
-  </body>
-
+<head>
+  <title>Sample Web Page</title>
+  <style>
+    /* CSS for Flexbox */
+    .flex-container {
+      display: flex; /* This creates a flex container */
+      flex-direction: column; /* Items will be stacked vertically */
+      align-items: center; /* Items will be centered horizontally */
+    }
+    .flex-item {
+      margin: 10px; /* Adds some space between items */
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <h1 class="flex-item">This is a heading</h1>
+    <p class="flex-item">This is the first paragraph of text</p>
+    <hr class="flex-item" />
+    <p class="flex-item">This is the second paragraph of text</p>
+  </div>
+</body>
+</html>
