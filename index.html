@@ -5,21 +5,29 @@
   <style>
     /* CSS for Flexbox */
     .flex-container {
-      display: flex; /* This creates a flex container */
-      flex-direction: column; /* Items will be stacked vertically */
-      align-items: center; /* Items will be centered horizontally */
+      display: flex;
+      justify-content: space-around; /* Evenly spaces items */
+      border: 2px solid black; /* Black outline for the flex container */
+      padding: 10px;
     }
     .flex-item {
-      margin: 10px; /* Adds some space between items */
+      width: 100px;
+      height: 100px;
+      border: 2px solid red; /* Red outline for each flex item */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
     }
   </style>
 </head>
 <body>
   <div class="flex-container">
-    <h1 class="flex-item">This is a heading</h1>
-    <p class="flex-item">This is the first paragraph of text</p>
-    <hr class="flex-item" />
-    <p class="flex-item">This is the second paragraph of text</p>
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
   </div>
 </body>
 </html>
